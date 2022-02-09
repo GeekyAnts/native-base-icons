@@ -30,7 +30,7 @@ This project was designed to make integration of icons in nativebase projects ea
     
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
-    import fontsCSS from "native-base-icons/FontCSS"
+    import fontsCSS from "native-base-icons/FontsCSS"
     
     class Document extends NativebaseDocument {
       //
@@ -56,8 +56,8 @@ This project was designed to make integration of icons in nativebase projects ea
      
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
-    import AntDesignFontFaceCSS from "native-base-icons/FontCSS/AntDesignFontFaceCSS";
-    import MaterialIconsFontFaceCSS from "native-base-icons/FontCSS/MaterialIconsFontFaceCSS";
+    import AntDesignFontFaceCSS from "native-base-icons/FontsCSS/AntDesignFontFaceCSS";
+    import MaterialIconsFontFaceCSS from "native-base-icons/FontsCSS/MaterialIconsFontFaceCSS";
     
     const fontsCSS = AntDesignFontFaceCSS + MaterialIconsFontFaceCSS;
     
@@ -88,14 +88,14 @@ This project was designed to make integration of icons in nativebase projects ea
      <br/>
      
     ```jsx
-    import fontCSS from "native-base-icons/FontCSS";
+    import fontsCSS from "native-base-icons/FontsCSS";
     
     const style = document.createElement("style");
     style.type = "text/css";
     if (style.styleSheet) {
-      style.styleSheet.cssText += fontCSS;
+      style.styleSheet.cssText += fontsCSS;
     } else {
-      style.appendChild(document.createTextNode(fontCSS));
+      style.appendChild(document.createTextNode(fontsCSS));
     }
     document.head.appendChild(style); 
     ```
@@ -105,17 +105,17 @@ This project was designed to make integration of icons in nativebase projects ea
      <br/>
      
     ```jsx
-    import AntDesignFontFaceCSS from "native-base-icons/FontCSS/AntDesignFontFaceCSS";
-    import MaterialIconsFontFaceCSS from "native-base-icons/FontCSS/MaterialIconsFontFaceCSS";
+    import AntDesignFontFaceCSS from "native-base-icons/FontsCSS/AntDesignFontFaceCSS";
+    import MaterialIconsFontFaceCSS from "native-base-icons/FontsCSS/MaterialIconsFontFaceCSS";
     
     const fontsCSS = AntDesignFontFaceCSS + MaterialIconsFontFaceCSS;
     
     const style = document.createElement("style");
     style.type = "text/css";
     if (style.styleSheet) {
-      style.styleSheet.cssText += fontCSS;
+      style.styleSheet.cssText += fontsCSS;
     } else {
-      style.appendChild(document.createTextNode(fontCSS));
+      style.appendChild(document.createTextNode(fontsCSS));
     }
     document.head.appendChild(style); 
     ```
