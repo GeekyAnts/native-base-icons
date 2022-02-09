@@ -1,8 +1,28 @@
-# native-base-icons
+# @native-base/icons
 
-`yarn add @native-base/icons` 
+## **Table of Contents**
 
-# Next Js:
+1. About The Project
+2. Built With
+3. Installation
+4. Usage
+5. Contributing
+
+## **About the project**
+
+This project was designed to make integration of icons in nativebase projects easier. It is a unified library which export icons and fonts for all the native and web platforms.
+
+## Built With
+
+- react-native-vector-icons
+- @expo/vector-icon
+- typescript
+
+## Installation
+
+`yarn add @native-base/icons`
+
+### Next Js:
 
 - Add Fonts:
     - To add all the fonts, write this piece of code in `_document.js`
@@ -59,15 +79,7 @@
     ```
     
 
-- Now that you are done with adding fonts, let’s render an icon:
-
-```jsx
-import { Entypo } from "native-base-icons";
-
-return <Icon as={Entypo} name="arrow-right"></Icon>;
-```
-
-# Create React App:
+### Create React App:
 
 - Add Fonts:
     - To add all the fonts, write this piece of code in `index.jsx`:
@@ -104,7 +116,7 @@ return <Icon as={Entypo} name="arrow-right"></Icon>;
     ```
     
 
-# Expo:
+### Expo:
 
 - Add this configuration to `.babel.config.js` file in root directory:
 
@@ -118,7 +130,7 @@ module.exports = function (api) {
         "module-resolver",
         {
           alias: {
-            "native-base-icons": "native-base-icons/index",
+            "native-base-icons": "native-base-icons/lib",
           },
         },
       ],
@@ -126,3 +138,25 @@ module.exports = function (api) {
   };
 };
 ```
+
+## Usage:
+
+Now, let’s render an icon:
+
+```jsx
+import { Entypo } from "native-base-icons";
+
+return <Icon as={Entypo} name="user"></Icon>;
+```
+
+## Contributing:
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement". Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
