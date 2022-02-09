@@ -26,7 +26,7 @@ This project was designed to make integration of icons in nativebase projects ea
 
 - Add Fonts:
     - To add all the fonts, write this piece of code in `_document.js`
-    - 
+     <br/>
     
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
@@ -52,7 +52,8 @@ This project was designed to make integration of icons in nativebase projects ea
     ```
     
     - To add particular fonts: (For example, if you need to add AntDesignFonts and MaterialIconsFonts, write this piece of code in `_document.js`)
-    
+     <br/>
+     
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
     import AntDesignFontFaceCSS from "native-base-icons/FontCSS/AntDesignFontFaceCSS";
@@ -84,7 +85,8 @@ This project was designed to make integration of icons in nativebase projects ea
 
 - Add Fonts:
     - To add all the fonts, write this piece of code in `index.jsx`:
-    
+     <br/>
+     
     ```jsx
     import fontCSS from "native-base-icons/FontCSS";
     
@@ -97,9 +99,11 @@ This project was designed to make integration of icons in nativebase projects ea
     }
     document.head.appendChild(style); 
     ```
-    
+     <br/>
+     
     - To add a particular font
-    
+     <br/>
+     
     ```jsx
     import AntDesignFontFaceCSS from "native-base-icons/FontCSS/AntDesignFontFaceCSS";
     import MaterialIconsFontFaceCSS from "native-base-icons/FontCSS/MaterialIconsFontFaceCSS";
@@ -120,7 +124,8 @@ This project was designed to make integration of icons in nativebase projects ea
 ### Expo:
 
 - Add this configuration to `.babel.config.js` file in root directory:
-
+ <br/>
+ 
 ```jsx
 module.exports = function (api) {
   api.cache(true);
