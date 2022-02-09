@@ -1,1 +1,1 @@
-declare module 'native-base-icons';
+declare module '@native-base/icons';
