@@ -26,6 +26,7 @@ This project was designed to make integration of icons in nativebase projects ea
 
 - Add Fonts:
     - To add all the fonts, write this piece of code in `_document.js`
+    - 
     
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
@@ -160,3 +161,4 @@ If you have a suggestion that would make this better, please fork the repo and c
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+6. 
