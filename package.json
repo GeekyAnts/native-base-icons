@@ -1,6 +1,6 @@
 {
   "name": "@native-base/icons",
-  "version": "0.0.8-alpha.3",
+  "version": "0.0.8-alpha.4",
   "repository": "git@github.com:GeekyAnts/native-base-icons.git",
   "main": "dist/index.js",
   "author": "madhav23bansal <madhavb230100@gmail.com>",
@@ -10,7 +10,10 @@
     "build": "tsc index.js --allowJs --target es5 --module amd --moduleResolution node --outfile ./dist/index.js"
   },
   "dependencies": {
+    "@babel/core": "^7.17.2",
+    "@babel/runtime": "^7.17.2",
     "@expo/vector-icons": "^12.0.5",
+    "react": "^17.0.2",
     "react-native-vector-icons": "^9.0.0"
   },
   "devDependencies": {
