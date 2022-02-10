@@ -56,8 +56,8 @@ This project was designed to make integration of icons in nativebase projects ea
      
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
-    import AntDesignFontFaceCSS from "native-base-icons/FontsCSS/AntDesignFontFaceCSS";
-    import MaterialIconsFontFaceCSS from "native-base-icons/FontsCSS/MaterialIconsFontFaceCSS";
+    import AntDesignFontFaceCSS from "@native-base/icons/FontsCSS/AntDesignFontFaceCSS";
+    import MaterialIconsFontFaceCSS from "@native-base/icons/FontsCSS/MaterialIconsFontFaceCSS";
     
     const fontsCSS = AntDesignFontFaceCSS + MaterialIconsFontFaceCSS;
     
@@ -79,7 +79,37 @@ This project was designed to make integration of icons in nativebase projects ea
     
     export default Document;
     ```
-    
+
+- Update `next.config.js` with this code (if you are using [@native-base/next adapter](https://github.com/GeekyAnts/native-base-next-adapter)):
+
+    ```jsx
+    const { withNativebase } = require("@native-base/next-adapter");
+    const path = require("path");
+
+    module.exports = withNativebase({
+      dependencies: ["@native-base/icons"],
+      nextConfig: {
+        webpack: (config, options) => {
+          config.module.rules.push({
+            test: /\.ttf$/,
+            loader: "url-loader", // or directly file-loader
+            include: path.resolve(__dirname, "node_modules/@native-base/icons"),
+          });
+          config.resolve.alias = {
+            ...(config.resolve.alias || {}),
+            "react-native$": "react-native-web",
+          };
+          config.resolve.extensions = [
+            ".web.js",
+            ".web.ts",
+            ".web.tsx",
+            ...config.resolve.extensions,
+          ];
+          return config;
+        },
+      },
+    });
+    ```
 
 ### Create React App:
 
@@ -88,7 +118,7 @@ This project was designed to make integration of icons in nativebase projects ea
      <br/>
      
     ```jsx
-    import fontsCSS from "native-base-icons/FontsCSS";
+    import fontsCSS from "@native-base/icons/FontsCSS";
     
     const style = document.createElement("style");
     style.type = "text/css";
@@ -105,8 +135,8 @@ This project was designed to make integration of icons in nativebase projects ea
      <br/>
      
     ```jsx
-    import AntDesignFontFaceCSS from "native-base-icons/FontsCSS/AntDesignFontFaceCSS";
-    import MaterialIconsFontFaceCSS from "native-base-icons/FontsCSS/MaterialIconsFontFaceCSS";
+    import AntDesignFontFaceCSS from "@native-base/icons/FontsCSS/AntDesignFontFaceCSS";
+    import MaterialIconsFontFaceCSS from "@native-base/icons/FontsCSS/MaterialIconsFontFaceCSS";
     
     const fontsCSS = AntDesignFontFaceCSS + MaterialIconsFontFaceCSS;
     
@@ -136,7 +166,7 @@ module.exports = function (api) {
         "module-resolver",
         {
           alias: {
-            "native-base-icons": "native-base-icons/lib",
+            "@native-base/icons": "@native-base/icons/lib",
           },
         },
       ],
@@ -150,7 +180,7 @@ module.exports = function (api) {
 Now, let’s render an icon:
 
 ```jsx
-import { Entypo } from "native-base-icons";
+import { Entypo } from "@native-base/icons";
 
 return <Icon as={Entypo} name="user"></Icon>;
 ```
