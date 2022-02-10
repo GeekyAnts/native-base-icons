@@ -1,11 +1,10 @@
 {
   "name": "@native-base/icons",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "repository": "git@github.com:GeekyAnts/native-base-icons.git",
   "author": "madhav23bansal <madhavb230100@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
