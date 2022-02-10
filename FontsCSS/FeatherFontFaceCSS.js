@@ -1,10 +1,10 @@
-import FeatherFontFile from "react-native-vector-icons/Fonts/Feather.ttf";
+import FeatherFontFile from "../Fonts/Feather.ttf";
 
 const FeatherFontFaceCSS = `
     @font-face {
         src: url(${FeatherFontFile});
         font-family: Feather;
     }
-`
+`;
 
 export default FeatherFontFaceCSS;
