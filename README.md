@@ -30,7 +30,7 @@ This project was designed to make integration of icons in nativebase projects ea
     
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
-    import fontsCSS from "native-base-icons/FontsCSS"
+    import fontsCSS from "@native-base/icons/FontsCSS"
     
     class Document extends NativebaseDocument {
       //
