@@ -6,7 +6,17 @@
  * or disable the default devtool with "devtool: false".
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("react-native"));
+	else if(typeof define === 'function' && define.amd)
+		define(["react", "react-native"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("react"), require("react-native")) : factory(root["react"], root["react-native"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, function(__WEBPACK_EXTERNAL_MODULE_react__, __WEBPACK_EXTERNAL_MODULE_react_native__) {
+return /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./index.js":
@@ -513,7 +523,7 @@ eval("/**\n * Copyright (c) 2014-present, Facebook, Inc.\n *\n * This source cod
 /***/ ((module) => {
 
 "use strict";
-module.exports = react;
+module.exports = __WEBPACK_EXTERNAL_MODULE_react__;
 
 /***/ }),
 
@@ -524,7 +534,7 @@ module.exports = react;
 /***/ ((module) => {
 
 "use strict";
-module.exports = react-native;
+module.exports = __WEBPACK_EXTERNAL_MODULE_react_native__;
 
 /***/ }),
 
@@ -745,5 +755,7 @@ eval("module.exports = JSON.parse('{\"acrobat\":61696,\"amazon\":61697,\"android
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
 /******/ 	var __webpack_exports__ = __webpack_require__("./index.js");
 /******/ 	
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});

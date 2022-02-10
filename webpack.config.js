@@ -1,23 +1,24 @@
 const path = require('path');
 
-
 module.exports = {
     mode: 'development',
     entry: './index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'index.js',
+        libraryTarget: "umd",
+        globalObject: 'this',
     },
-    externals: ['react', 'react-dom', 'react-native'],
+    externals: {
+        'react': 'react',
+        'react-native': 'react-native'
+    },
     module: {
         rules: [
             // {
-            //     test: /\.(json)$/i,
-            //     use: [
-            //         {
-            //             loader: 'file-loader',
-            //         },
-            //     ],
+            //     test: /\.tsx|ts?$/,
+            //     use: 'ts-loader',
+            //     exclude: /node_modules/,
             // },
             {
                 test: /\.(js|jsx|mjs|ts|tsx)$/,
