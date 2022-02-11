@@ -32,6 +32,7 @@ This project was designed to make integration of icons in nativebase projects ea
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
     import fontsCSS from "@native-base/icons/FontsCSS"
     import { AppRegistry } from "react-native";
+    import { Main } from "next/document";
     import * as React from "react";
     
     class Document extends NativebaseDocument {
