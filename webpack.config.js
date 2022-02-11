@@ -1,7 +1,6 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -15,11 +14,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // {
-      //     test: /\.tsx|ts?$/,
-      //     use: 'ts-loader',
-      //     exclude: /node_modules/,
-      // },
       {
         test: /\.(js|jsx|mjs|ts|tsx)$/,
         include: [
