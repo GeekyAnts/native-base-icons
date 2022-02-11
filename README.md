@@ -119,14 +119,10 @@ This project was designed to make integration of icons in nativebase projects ea
      
     ```jsx
     import fontsCSS from "@native-base/icons/FontsCSS";
-    
+
     const style = document.createElement("style");
     style.type = "text/css";
-    if (style.styleSheet) {
-      style.styleSheet.cssText += fontsCSS;
-    } else {
-      style.appendChild(document.createTextNode(fontsCSS));
-    }
+    style.appendChild(document.createTextNode(fontsCSS));
     document.head.appendChild(style); 
     ```
      <br/>
