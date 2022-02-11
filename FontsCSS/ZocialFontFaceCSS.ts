@@ -1,6 +1,6 @@
 import ZocialFontFile from "../Fonts/Zocial.ttf";
 
-const ZocialFontFaceCSS = `
+const ZocialFontFaceCSS: any = `
     @font-face {
         src: url(${ZocialFontFile});
         font-family: Zocial;

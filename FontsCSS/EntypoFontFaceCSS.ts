@@ -1,6 +1,6 @@
 import EntypoFontFile from "../Fonts/Entypo.ttf";
 
-const EntypoFontFaceCSS = `
+const EntypoFontFaceCSS: any = `
     @font-face {
         src: url(${EntypoFontFile});
         font-family: Entypo;

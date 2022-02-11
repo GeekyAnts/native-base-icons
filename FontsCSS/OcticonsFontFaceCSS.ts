@@ -1,6 +1,6 @@
 import OcticonsFontFile from "../Fonts/Octicons.ttf";
 
-const OcticonsFontFaceCSS = `
+const OcticonsFontFaceCSS: any = `
     @font-face {
         src: url(${OcticonsFontFile});
         font-family: Octicons;

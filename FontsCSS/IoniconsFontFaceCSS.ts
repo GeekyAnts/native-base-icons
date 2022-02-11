@@ -1,6 +1,6 @@
 import IoniconsFontFile from "../Fonts/Ionicons.ttf";
 
-const IoniconsFontFaceCSS = `
+const IoniconsFontFaceCSS: any = `
     @font-face {
         src: url(${IoniconsFontFile});
         font-family: Ionicons;
