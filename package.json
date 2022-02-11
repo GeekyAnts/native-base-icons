@@ -1,6 +1,6 @@
 {
   "name": "@native-base/icons",
-  "version": "0.0.9-alpha.1",
+  "version": "0.0.9-aplha.2",
   "repository": "git@github.com:GeekyAnts/native-base-icons.git",
   "main": "dist/index.js",
   "author": "madhav23bansal <madhavb230100@gmail.com>",
