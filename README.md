@@ -114,7 +114,7 @@ This project was designed to make integration of icons in nativebase projects ea
 ### Create React App:
 
 - Add Fonts:
-    - To add all the fonts, write this piece of code in `index.jsx`:
+    - To add all the fonts, write this piece of code in `index.jsx/index.tsx`:
      <br/>
      
     ```jsx
