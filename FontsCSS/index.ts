@@ -12,7 +12,7 @@ import OcticonsFont from "../Fonts/Octicons.ttf";
 import SimpleLineIconsFont from "../Fonts/SimpleLineIcons.ttf";
 import ZocialFont from "../Fonts/Zocial.ttf";
 
-const fontsCSS: any = `
+const fontsCSS = `
 	@font-face {
 		src: url(${EntypoFont});
 		font-family: Entypo;

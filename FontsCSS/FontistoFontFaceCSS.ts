@@ -1,6 +1,6 @@
 import FontistoFontFile from "../Fonts/Fontisto.ttf";
 
-const FontistoFontFaceCSS: any = `
+const FontistoFontFaceCSS = `
     @font-face {
         src: url(${FontistoFontFile});
         font-family: Fontisto;

@@ -1,6 +1,6 @@
 import FoundationFontFile from "../Fonts/Foundation.ttf";
 
-const FoundationFontFaceCSS: any = `
+const FoundationFontFaceCSS = `
     @font-face {
         src: url(${FoundationFontFile});
         font-family: Foundation;

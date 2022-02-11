@@ -1,6 +1,6 @@
 import FeatherFontFile from "../Fonts/Feather.ttf";
 
-const FeatherFontFaceCSS: any = `
+const FeatherFontFaceCSS = `
     @font-face {
         src: url(${FeatherFontFile});
         font-family: Feather;

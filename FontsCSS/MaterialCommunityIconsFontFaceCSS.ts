@@ -1,6 +1,6 @@
 import MaterialCommunityIconsFontFile from "../Fonts/MaterialCommunityIcons.ttf";
 
-const MaterialCommunityIconsFontFaceCSS: any = `
+const MaterialCommunityIconsFontFaceCSS = `
     @font-face {
         src: url(${MaterialCommunityIconsFontFile});
         font-family: MaterialCommunityIcons;

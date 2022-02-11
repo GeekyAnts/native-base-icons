@@ -1,6 +1,6 @@
 import SimpleLineIconsFontFile from "../Fonts/SimpleLineIcons.ttf";
 
-const SimpleLineIconsFontFaceCSS: any = `
+const SimpleLineIconsFontFaceCSS = `
     @font-face {
         src: url(${SimpleLineIconsFontFile});
         font-family: SimpleLineIcons;

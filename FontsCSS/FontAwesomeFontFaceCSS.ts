@@ -1,6 +1,6 @@
 import FontAwesomeFontFile from "../Fonts/FontAwesome.ttf";
 
-const FontAwesomeFontFaceCSS: any = `
+const FontAwesomeFontFaceCSS = `
     @font-face {
         src: url(${FontAwesomeFontFile});
         font-family: FontAwesome;

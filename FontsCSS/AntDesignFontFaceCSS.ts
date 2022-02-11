@@ -1,6 +1,6 @@
 import AntDesignFontFile from "../Fonts/AntDesign.ttf";
 
-const AntDesignFontFaceCSS: any = `
+const AntDesignFontFaceCSS = `
     @font-face {
         src: url(${AntDesignFontFile});
         font-family: AntDesign;
