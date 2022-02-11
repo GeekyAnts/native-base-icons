@@ -31,19 +31,23 @@ This project was designed to make integration of icons in nativebase projects ea
     ```jsx
     import { default as NativebaseDocument } from "@native-base/next-adapter/document";
     import fontsCSS from "@native-base/icons/FontsCSS"
+    import { AppRegistry } from "react-native";
+    import * as React from "react";
     
     class Document extends NativebaseDocument {
       //
     }
     
     async function getInitialProps({ renderPage }) {
-      const res = await NativebaseDocument.getInitialProps({ renderPage });
+      AppRegistry.registerComponent("Main", () => Main);
+      const { getStyleElement } = AppRegistry.getApplication("Main");
+      const page = await renderPage();
       const styles = [
         // eslint-disable-next-line react/jsx-key
         <style dangerouslySetInnerHTML={{ __html: fontsCSS }} />,
-        ...res.styles
+        getStyleElement(),
       ];
-      return { ...res, styles: React.Children.toArray(styles) };
+      return { ...page, styles: React.Children.toArray(styles) };
     }
     
     Document.getInitialProps = getInitialProps;
