@@ -1,6 +1,6 @@
 {
   "name": "@native-base/icons",
-  "version": "0.0.10-alpha.2",
+  "version": "0.0.10",
   "repository": "git@github.com:GeekyAnts/native-base-icons.git",
   "main": "dist/index.js",
   "author": "madhav23bansal <madhavb230100@gmail.com>",
@@ -14,8 +14,7 @@
     "@babel/runtime": "^7.17.2",
     "@expo/vector-icons": "^12.0.5",
     "react": "^17.0.2",
-    "react-native-vector-icons": "^9.0.0",
-    "ttf-loader": "^1.0.2"
+    "react-native-vector-icons": "^9.0.0"
   },
   "devDependencies": {
     "@types/react-native-vector-icons": "^6.4.10",
